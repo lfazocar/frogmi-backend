@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   scope '/api' do
     resources :features, only: :index do
-      post 'comments', on: :member
+      post 'comments', to: 'features#comment'
     end
   end
 
