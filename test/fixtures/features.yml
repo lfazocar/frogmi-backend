@@ -1,0 +1,42 @@
+# == Schema Information
+#
+# Table name: features
+#
+#  id          :bigint           not null, primary key
+#  external_id :string
+#  title       :string           not null
+#  url         :string           not null
+#  place       :string           not null
+#  mag_type    :string           not null
+#  magnitude   :float
+#  time        :string
+#  tsunami     :boolean
+#  longitude   :float
+#  latitude    :float
+#  created_at  :datetime         not null
+#  updated_at  :datetime         not null
+#
+
+one:
+  external_id: MyString
+  title: MyString
+  url: MyString
+  place: MyString
+  mag_type: MyString
+  magnitude: 1.5
+  time: MyString
+  tsunami: false
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  external_id: MyString
+  title: MyString
+  url: MyString
+  place: MyString
+  mag_type: MyString
+  magnitude: 1.5
+  time: MyString
+  tsunami: false
+  longitude: 1.5
+  latitude: 1.5
