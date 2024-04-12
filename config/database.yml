@@ -17,5 +17,4 @@ test:
 
 production:
   <<: *default
-  database: frogmi_backend_production
-  # url: <%= ENV["POSTGRES_URL"] %>
+  url: <%= ENV["POSTGRES_URL"] %>
