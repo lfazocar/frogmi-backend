@@ -55,6 +55,18 @@ class FeaturesController < ApplicationController
     end
   end
 
+  # GET /features/:id/comments
+  def feature_comments
+    comments = Comment.where(feature_id: params[:feature_id])
+    render json: comments
+  end
+
+  # GET /features/comments
+  def all_comments
+    comments = Comment.all
+    render json: comments
+  end
+
   private
 
   def comment_params

@@ -22,6 +22,8 @@ To update the earthquake data stored in the database you have to run the task `g
 #### Endpoints
 - GET /api/features: Receives requests with a query containing the pagination info and magnitude types requested and sends back the corresponding features.
 - POST /api/features/:id/comments: Receives requests with a JSON object containing `{ "body": "string" }` (string can't be empty) and stores it in the database associated to the feature in the path.
+- GET /api/features/:id/comments: Sends back a JSON with the comments related to the feature.
+- GET /api/features/comments: Sends back a JSON with all comments.
 
 ### Created with
 
