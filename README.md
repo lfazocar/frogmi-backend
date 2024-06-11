@@ -1,6 +1,4 @@
-# Backend Desafío Técnico Frogmi
-
-## GeoJSON API Backend
+# GeoJSON API
 
 This application retrieves earthquake data from the [USGS feed](https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_month.geojson), stores and processes it so another app can consume it. It can also receive comments sent to the individual features and store them in the database.
 
